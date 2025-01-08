@@ -1,34 +1,39 @@
 # Apple Website Clone
 
 ## Project Overview
-This repository contains the first stage of developing an Apple website clone using React and Tailwind CSS. The project is initialized with Vite as the build tool for its speed and simplicity.
+
+This repository contains the first stage of developing an Apple website clone using **React** and **Tailwind CSS**. The project is initialized with **Vite** for its speed and simplicity, providing a modern development environment.
+
 
 <br>
 
-## Stage 02 : Add Resource 
-#### Log: January 8, 2025
+## Stage 02: Add Resources  
+**Log Date:** January 8, 2025  
+
+This stage involves setting up essential resources like colors, assets, and helper files to prepare the project for further development.
+
 <hr>
 <br>
 
 ### Step-by-Step Process
 
-#### 1. Add colors
-
-```js
- colors: {
-        blue: "#2997FF",
-        gray: {
-          DEFAULT: "#86868b",
-          100: "#94928d",
-          200: "#afafaf",
-          300: "#42424570",
-        },
-        zinc: "#101010",
+#### 1. Add Custom Colors
+- Update the color palette in the Tailwind CSS configuration file.  
+  Example configuration:  
+  ```js
+  colors: {
+      blue: "#2997FF",
+      gray: {
+        DEFAULT: "#86868b",
+        100: "#94928d",
+        200: "#afafaf",
+        300: "#42424570",
       },
-```
-Update
-tailwind.config.js
-as this | ->
+      zinc: "#101010",
+    },
+    ```
+Modify the `tailwind.config.js` file with the above configuration.
+👉 View the updated | ->
    &nbsp; [ <code>tailwind.config.js</code>](./tailwind.config.js)
 
 
@@ -65,7 +70,7 @@ add scene.glb
    &nbsp; [ models ](./public/models/))
 
 
-#### 4. util file for use assests
+#### 5. util file for use assests
 
 inside 'src' folder create 'utils' folder
 create file 'index.js'
@@ -76,21 +81,32 @@ as this | ->
    &nbsp; [ <code>index.js</code>](./src/utils/index.js)
 
 
+#### 6. constant file for the app
+
+inside 'src' folder create 'constants' folder
+create file 'index.js'
+
+Update
+index.js
+as this | ->
+   &nbsp; [ <code>index.js</code>](./src/constants/index.js)
+
+
+#### all done
+finally go to `index.html` file and change the title and icon as follow
+
+| ->
+   &nbsp; [ <code>index.html</code>](./index.html)
+
+after this
+run
+   npm run dev
+
+open 
+Local:   http://localhost:{port#}/
+
+see you in next step to start development
 
 
 
-
-
-
-
-
-
-
-<details>
-<summary><code>t</code></summary>
-
-<br>
-
-
-</details>
 
