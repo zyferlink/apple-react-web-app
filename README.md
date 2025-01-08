@@ -7,10 +7,9 @@ This repository contains the first stage of developing an Apple website clone us
 
 <br>
 
-## Stage 04: Implement Components  
+## Stage 05: Implement Video Carousel Component
 **Log Date:** January 8, 2025  
 
-This stage focuses on implementing and refining components like Highlights and Video Carousel to enhance the application's interactivity and design.
 
 
 <hr>
@@ -18,42 +17,8 @@ This stage focuses on implementing and refining components like Highlights and V
 
 ### Step-by-Step Process
 
-#### 1. Highlights Component Basic Implementation  
 
-- Build a basic Highlights section to showcase content.  
-
-👉 [View the updated `Highlights.jsx` Component](./src/components/Highlights.jsx)
-
-**Note:**  
-You can see the changes in real time during the development phase.
-
-
-<hr>
-
-#### 2. Add Custom Components for Video Carousel  
-
-- Inside the `src/components` folder:  
-  - Create a new file named `VideoCarousel.jsx`.  
-
-👉 [View the `src/components` folder](./src/components/)
-
-**Note:**  
-Install the `'ES7+ React/Redux/React-Native snippets'` plugin.  
-Using the `rafce` snippet will generate interactive component templates quickly.
-
-
-<hr>
-
-#### 3. Attach Video Carousel Component to Highlights  
-
-- Add the `<VideoCarousel />` component just before the closing `<section>` tag inside the Highlights component.  
-
-👉 [View the updated `Highlights.jsx` Component](./src/components/Highlights.jsx)
-
-
-<hr>
-
-#### 4. Video Carousel Component Basic Implementation  
+#### 1. Video Carousel Component Implementation  
 
 - Build a basic Video Carousel section to showcase video content.  
 
@@ -61,6 +26,8 @@ Using the `rafce` snippet will generate interactive component templates quickly.
 
 **Note:**  
 You can see the changes in real time during the development phase.
+
+
 
 
 
@@ -73,6 +40,10 @@ After completing the above steps:
 2. Open the local development server in your browser:<br>
     ex: Local: ```http://localhost:{port#}/```
 
+<hr>
+
+#### Stage 5 Screenshot : Basic Impl Video Carousel
+<img src="./_archive/screenshots/screenshot-2.png">
 
 <hr>
 See you in the next step for the development process! 🚀
