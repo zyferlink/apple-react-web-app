@@ -28,12 +28,10 @@ You can see the changes in real time during the development phase.
 
 <hr>
 
-#### 2. Add Custom Components for video carousel 
+#### 2. Add Custom Components for Video Carousel 
 - Create a new `components` folder inside the `src` directory.  
 - Inside the `components` folder:  
-  - Create a `Navbar.jsx` file.  
-  - Create a `Hero.jsx` file.  
-  - Create a `Highlights.jsx` file.  
+  - Create a `VideoCarousel.jsx` file.  
 
 👉 [View the `src/components` folder](./src/components/)
 
