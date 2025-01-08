@@ -3,7 +3,8 @@
 ## Project Overview
 This repository contains the first stage of developing an Apple website clone using React and Tailwind CSS. The project is initialized with Vite as the build tool for its speed and simplicity.
 
-## Log: January 8, 2025
+
+## Stage 01 <br>Log: January 8, 2025
 
 ### Step-by-Step Process
 
@@ -97,4 +98,11 @@ The project has been successfully initialized with Vite, React, and Tailwind CSS
 - Build the homepage structure.
 - Implement Apple website styling using Tailwind CSS.
 - Add interactivity using React.
+
+<hr>
+
+Source: 
+```
+https://tailwindcss.com/docs/guides/vite
+```
 
