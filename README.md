@@ -32,20 +32,16 @@ This stage involves setting up essential resources like colors, assets, and help
       zinc: "#101010",
     },
     ```
-Modify the `tailwind.config.js` file with the above configuration.
+- Modify the `tailwind.config.js` file with the above configuration.  <br>
 👉 View the updated | ->
    &nbsp; [ <code>tailwind.config.js</code>](./tailwind.config.js)
 
 
+#### 2. Update the Global Stylesheet
 
-#### 2. Update index file with helpers
-
-
-Update
-index.css
-as this | ->
-   &nbsp; [ <code>index.css</code>](./src/index.css)
-
+- Enhance the `index.css` file with necessary helper classes and styles.  <br>
+  👉 View the updated | ->
+   &nbsp; [`index.css`](./src/index.css)
 
 
 #### 3. Add images Assets
