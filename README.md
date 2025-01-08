@@ -33,13 +33,20 @@ so 'rafce' give you intreact file
 
 
 
-#### 2. import component file to App.jsx
+#### 2. Import component file to App.jsx
 
 - 👉 View the updated | ->
    &nbsp; [`index.css`](./src/App.jsx)
 
 note: now you can run this and see the changes
 
+
+#### 3. Basic Navbar impl
+
+👉 View the updated Navbar | ->
+   &nbsp; [ <code>/src/components/Navbar</code>](./src/components/Navbar.jsx)
+
+note: you can see the changes realtime in the dev phase
 
 
 
