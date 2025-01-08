@@ -44,18 +44,22 @@ This stage involves setting up essential resources like colors, assets, and help
    &nbsp; [`index.css`](./src/index.css)
 
 
-#### 3. Add images Assets
+#### 3. Add Image and Video Assets  
+- **Organize Assets**:  
+  1. Delete the existing `assets` folder in the `src` directory.  
+  2. Create a new `assets` folder inside the `public` directory.  
+  3. Inside the `assets` folder:  
+     - Create an `images` folder.  
+     - Create a `videos` folder.
 
-first delete assests folder in 'src'
+- **Add Images**:  
+  Place the images (available in the repository) inside the `public/assets/images` folder.  
+  👉 [View images in the repository](./public/assets/images/)
 
-inside 'public' folder create 'assets' folder inside create 'images' & 'videos' folder
+- **Add Videos**:  
+  Download videos from the following link and place them in the `public/assets/videos` folder:  
+  [Download Videos from Google Drive](https://drive.google.com/drive/folders/193simR5ud2I4ChhXN8cT-ZMAibI7DMQR?usp=sharing)
 
-add images* (already in this repo  | ->
-   &nbsp; [ Images ](./public/assets/images/)) <br>
-add videos from below link (couse it is not in this repo)
-```
-https://drive.google.com/drive/folders/193simR5ud2I4ChhXN8cT-ZMAibI7DMQR?usp=sharing
-```
 
 
 #### 4. Add model Assets
