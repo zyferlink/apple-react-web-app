@@ -7,17 +7,28 @@ This repository contains the first stage of developing an Apple website clone us
 
 <br>
 
-## Stage 03: Add Components  
+## Stage 04: Impl Components  
 **Log Date:** January 8, 2025  
 
-This stage focuses on adding and configuring custom components to structure the application layout and functionality.
+
 
 <hr>
 <br>
 
 ### Step-by-Step Process
 
-#### 1. Add Custom Components  
+#### 1. Basic Highlights Component Implementation
+ 
+- Build a basic Highlights section to showcase content.  
+
+👉 [View the updated `src/components/Highlights` Component](./src/components/Highlights.jsx)
+
+**Note:**  
+You can see the changes in real time during the development phase.
+
+<hr>
+
+#### 2. Add Custom Components for video carousel 
 - Create a new `components` folder inside the `src` directory.  
 - Inside the `components` folder:  
   - Create a `Navbar.jsx` file.  
@@ -32,55 +43,6 @@ Using the `rafce` snippet will generate interactive component templates quickly.
 
 <hr>
 
-#### 2. Import Component Files to `App.jsx`  
-- Integrate the newly created components into `App.jsx`.  
-
-👉 [View the updated `App.jsx`](./src/App.jsx)
-
-**Note:**  
-Now you can run the application to see the changes.
-
-<hr>
-
-#### 3. Basic Navbar Implementation  
-- Build a basic Navbar component to display in the application.  
-
-👉 [View the updated Navbar Component](./src/components/Navbar.jsx)
-
-**Note:**  
-You can see the changes in real time during the development phase.
-
-
-<hr>
-
-
-#### 4. Install GSAP for Animations  
-
-- Install the GSAP animation library by running the following command in the terminal:  
-  ```bash
-  npm install gsap @gsap/react
-  ```
-
-After installation, you can import the GSAP modules as follows:
-
-import gsap from "gsap"; <br>
-import { useGSAP } from "@gsap/react";
-
-Note: <br>
-GSAP will be used to add animations to components in later stages.
-
-<hr>
-
-#### 5. Basic Hero Component Implementation
- 
-- Build a basic Hero section to showcase content prominently.  
-
-👉 [View the updated `src/components/Hero` Component](./src/components/Hero.jsx)
-
-**Note:**  
-You can see the changes in real time during the development phase.
-
-<hr>
 
 ### Run the Application  
 After completing the above steps:  
