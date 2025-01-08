@@ -1,10 +1,116 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { hightlightsSlides } from '../constants'
+import { useRef, useState } from 'react';
+import gsap from 'gsap';
+import { pauseImg, playImg, replayImg } from '../utils';
+import { useGSAP } from '@gsap/react';
 
 const VideoCarousel = () => {
+
+    const videoRef = useRef([]);
+    const videoSpanRef = useRef([]);
+    const videoDivRef = useRef([]);
+
+    const [video, setVideo] = useState({
+        isEnd: false,
+        startPlay: false,
+        videoId: 0,
+        isLastVideo: false,
+        isPlaying: false,
+    });
+
+    const [loadedData, setLoadedData] = useState([]);
+
+    const { isEnd, isLastVideo, startPlay, videoId, isPlaying } = video;
+
+
+    useGSAP(() => {
+        gsap.to('#video', {
+            scrollTrigger: {
+                trigger: '#video',
+                toggleActions: 'restart none none none'
+            },
+            onComplete: () =>{
+                setVideo((prevVideo) => ({
+                    ...prevVideo,
+                    startPlay: true,
+                    isPlaying: true,
+                }))
+            }
+        })
+    }, [isEnd, videoId])
+
+    useEffect(() => {
+        if (loadedData.length > 3) {
+            if (!isPlaying) {
+                videoRef.current[videoId].pause();
+            } else {
+                startPlay && videoRef.current[videoId].play();
+            }
+        }
+    }, [startPlay, videoId, isPlaying, loadedData])
+
+    const handleLoadedMetaData = (index, element) => 
+        setLoadedData((prevVideo) => [...prevVideo, element])
+
+    useEffect(() => {
+        const currentProgress = 0;
+        let span = videoSpanRef.current;
+
+        if (span[videoId]) { // animate the progress of the video
+            let anim = gsap.to(span[videoId], {
+                onUpdate: () => {
+
+                },
+                onComplete: () => {
+
+                }
+            })
+
+        }
+
+    }, [videoId, startPlay])
+
+    const handleProcess = (type, index) => {
+        switch (type){
+            case 'video-end':
+                setVideo((prevVideo) => ({
+                    ...prevVideo, 
+                    isEnd:true, 
+                    videoId: index + 1
+                }))
+                break;
+
+                case 'video-last':
+                    setVideo((prevVideo) => ({
+                        ...prevVideo, 
+                        isLastVideo:true
+                    }))
+                break;
+
+                case 'video-reset':
+                    setVideo((prevVideo) => ({
+                        ...prevVideo, 
+                        isLastVideo:false,
+                        videoId: 0
+                    }))
+                break;
+
+                case 'play':
+                    setVideo((prevVideo) => ({
+                        ...prevVideo, 
+                        isPlaying: !pre.isPlaying
+                    }))
+                break;
+
+            default:
+                break;
+        }
+    }
+
     return (
         <>
-            <div className='flex items-center'>
+            <div className='flex items-center mt-10'>
                 {hightlightsSlides.map((list, index) => (
                     <div
                         id='slider'
@@ -18,6 +124,17 @@ const VideoCarousel = () => {
                                     playsInline={true}
                                     preload='auto'
                                     muted
+                                    ref={(element) =>
+                                        (videoRef.current[index] = element)
+                                    }
+                                    onPlay={() => {
+                                        setVideo((prevVideo => ({
+                                            ...prevVideo, isPlaying: true
+                                        })))
+                                    }}
+                                    onLoadedMetadata={(element) =>
+                                        handleLoadedMetaData(index, element)
+                                    }
                                 >
                                     <source src={list.video} type="video/mp4" />
                                 </video>
@@ -36,6 +153,44 @@ const VideoCarousel = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div
+                className='relative flex-center mt-10'>
+                <div
+                    className='flex-center py-5 px-7 bg-gray-300 backdrop-blur rounded-full'>
+                    {videoRef.current.map((_, index) =>
+                        <span
+                            key={index}
+                            ref={(element) => (videoDivRef.current[index] = element)}
+                            className='mx-2 w-3 h-3 bg-gray-200 rounded-full relative cursor-pointer'>
+                            <span
+                                className='absolute h-full w-full rounded-full'
+                                ref={(element) => (videoSpanRef.current[index] = element)} />
+                        </span>
+                    )}
+                </div>
+                <button
+                    className='control-btn'>
+                    <img
+                        src={
+                            isLastVideo ? replayImg :
+                                !isPlaying ? playImg :
+                                    pauseImg
+                        } 
+                        alt={
+                            isLastVideo ? 'replay' :
+                                !isPlaying ? 'play' :
+                                   'pause'
+                        }
+
+                        onClick = {
+                            isLastVideo ? () => handleProcess('video-reset') :
+                            !isPlaying ? () => handleProcess('play') :
+                            handleProcess('pause')
+                        }
+                    />
+                </button>
             </div>
         </>
     )
