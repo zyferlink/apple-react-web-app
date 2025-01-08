@@ -61,51 +61,48 @@ This stage involves setting up essential resources like colors, assets, and help
   [Download Videos from Google Drive](https://drive.google.com/drive/folders/193simR5ud2I4ChhXN8cT-ZMAibI7DMQR?usp=sharing)
 
 
-
-#### 4. Add model Assets
-inside 'public' folder create 'models' folder
-
-add scene.glb
-(which is already in this repo | ->
-   &nbsp; [ models ](./public/models/))
+#### 4. Add Model Assets  
+- Inside the `public` folder, create a new folder named `models`.  
+- Add the `scene.glb` file (available in the repository) to this folder.  
+  👉 [View the `models` folder](./public/models/)
 
 
-#### 5. util file for use assests
 
-inside 'src' folder create 'utils' folder
-create file 'index.js'
-
-Update
-index.js
-as this | ->
-   &nbsp; [ <code>index.js</code>](./src/utils/index.js)
+#### 5. Create a Utility File for Asset Management  
+- Inside the `src` directory, create a folder named `utils`.  
+- Add a new file named `index.js` inside the `utils` folder.  
+- Update the /src/utils/`index.js` file as required.  
+  👉 [View the updated `index.js`](./src/utils/index.js)
 
 
-#### 6. constant file for the app
 
-inside 'src' folder create 'constants' folder
-create file 'index.js'
-
-Update
-index.js
-as this | ->
-   &nbsp; [ <code>index.js</code>](./src/constants/index.js)
+#### 6. Create a Constants File for App Configuration  
+- Inside the `src` directory, create a folder named `constants`.  
+- Add a new file named `index.js` inside the `constants` folder.  
+- Update the /src/constants/`index.js` file as required.  
+  👉 [View the updated `index.js`](./src/constants/index.js)
 
 
-#### all done
-finally go to `index.html` file and change the title and icon as follow
 
-| ->
-   &nbsp; [ <code>index.html</code>](./index.html)
+#### 7. Finalize the `index.html` File  
+- Update the `index.html` file:  
+  1. Change the website title.  
+  2. Update the favicon.  
+  👉 [View the updated `index.html`](./index.html)
 
-after this
-run
+
+### Run the Application  
+After completing the above steps:  
+1. Run the development server using the command:  
+   ```bash
    npm run dev
+    ```
+2. Open the local development server in your browser:<br>
+    ex: Local: ```http://localhost:{port#}/```
 
-open 
-Local:   http://localhost:{port#}/
 
-see you in next step to start development
+<hr>
+See you in the next step for the actual development process! 🚀
 
 
 
