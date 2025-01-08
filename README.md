@@ -41,6 +41,22 @@ Using the `rafce` snippet will generate interactive component templates quickly.
 
 <hr>
 
+#### 3. Attach Video Carousel component inside the Highlights component
+- before close <section> tag add <VideoCarousel/>
+
+  👉 [View the updated `src/components/Highlights` Component](./src/components/Highlights.jsx)
+
+<hr>
+
+#### 4. Basic VideoCarousel Component Implementation
+ 
+- Build a basic VideoCarousel section to showcase content.  
+
+👉 [View the updated `src/components/VideoCarousel` Component](./src/components/VideoCarousel.jsx)
+
+**Note:**  
+You can see the changes in real time during the development phase.
+
 
 ### Run the Application  
 After completing the above steps:  
