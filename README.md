@@ -46,15 +46,11 @@ You can see the changes in real time during the development phase.
 <hr>
 
 
-#### 3. install three js for 3d modeling
+#### 3. install three js for __
 
 - 
 
-👉 [View the updated `ModelView.jsx` Component](./src/components/model3d/ModelView.jsx)
-
-**Note:**  
-You can see the changes in real time during the development phase.
-
+npm install three @react-three/drei @react-three/fiber
 <br>
 
 <hr>
