@@ -7,7 +7,7 @@ This repository contains the first stage of developing an Apple website clone us
 
 <br>
 
-## Stage 05: Implement Video Carousel Component  
+## Stage 06: Implement 3d model view Component  
 **Log Date:** January 9, 2025  
 
 This stage focuses on implementing the Video Carousel component to showcase video content interactively.
@@ -19,16 +19,47 @@ This stage focuses on implementing the Video Carousel component to showcase vide
 ### Step-by-Step Process
 
 
-#### 1. Video Carousel Component Implementation  
+#### 1. Model Component Implementation  
 
-- Build a basic Video Carousel section to display video content effectively.  
+- Build a basic model section 
 
-👉 [View the updated `VideoCarousel.jsx` Component](./src/components/VideoCarousel.jsx)
+👉 [View the updated `Model.jsx` Component](./src/components/model3d/Model.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
 
 <br>
+
+<hr>
+
+#### 2. Model View Component Implementation  
+
+- Build a basic Model View section 
+
+👉 [View the updated `ModelView.jsx` Component](./src/components/model3d/ModelView.jsx)
+
+**Note:**  
+You can see the changes in real time during the development phase.
+
+<br>
+
+<hr>
+
+
+#### 3. install three js for 3d modeling
+
+- 
+
+👉 [View the updated `ModelView.jsx` Component](./src/components/model3d/ModelView.jsx)
+
+**Note:**  
+You can see the changes in real time during the development phase.
+
+<br>
+
+<hr>
+
+
 
 
 ### Run the Application  
