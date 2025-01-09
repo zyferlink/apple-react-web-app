@@ -7,11 +7,10 @@ This repository contains the first stage of developing an Apple website clone us
 
 <br>
 
-## Stage 07: Implement Feature Section Component  
+## Stage 08: Implement How It Works Section  
 **Log Date:** January 9, 2025  
 
-This stage focuses on building the "Features" section for the Apple website clone and adding animations using GSAP.
-
+This stage focuses on building the "How It Works" section for the Apple website clone and refining its implementation.
 
 <hr>
 <br>
@@ -19,39 +18,31 @@ This stage focuses on building the "Features" section for the Apple website clon
 ### Step-by-Step Process
 
 
-#### 1. Add Feature Component  
+#### 1. Add 'How It Works Section' Component  
 
-- Inside the `components` folder, create a file named `Features.jsx`.  
-- Build the basic implementation for the Features section.  
+- Inside the `components` folder, create a file named `HowItWorks.jsx`.  
+- Build the basic implementation for the How It Works section.  
 
-👉 [View the updated `Features.jsx` Component](./src/components/Features.jsx)
+👉 [View the updated `HowItWorks.jsx` Component](./src/components/HowItWorks.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
+
 
 <br>
 
 <hr>
 
 
-#### 2. Add Animation with GSAP Component  
+#### 2. Update 'How It Works Section' Component  
 
-- Create an animation component using GSAP.  
+- Refine and enhance the How It Works section with additional styling or animations.
 
-👉 [View the updated `animations.js` Component](./src/utils/animations.js)
-
-<br>
-
-<hr>
-
-#### 3. Update Feature Component  
-
-- Complete the implementation of the Features section with animations and styling.  
-
-👉 [View the updated `Features.jsx` Component](./src/components/Features.jsx)
+👉 [View the updated `HowItWorks.jsx` Component](./src/components/HowItWorks.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
+
 
 <br>
 
