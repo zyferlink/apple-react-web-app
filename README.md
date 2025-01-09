@@ -63,6 +63,18 @@ npm install three @react-three/drei @react-three/fiber
 
 <hr>
 
+#### 5. Add Iphone jsx component
+
+- 🎮 Turns GLTFs into JSX components. use this repo
+  ```https://github.com/pmndrs/gltfjsx```
+
+upload assets/models/scene.glb and convert. then
+  copy that converted jsx code and paste to IPhone.jsx in the component section
+👉 [View the updated `IPhone.jsx` Component](./src/components/model3d/IPhone.jsx)
+<br>
+
+<hr>
+
 
 
 
