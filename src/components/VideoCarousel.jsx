@@ -178,8 +178,12 @@ const VideoCarousel = () => {
                                 <video
                                     id="video"
                                     playsInline={true}
-                                    preload='auto'
+                                    preload="auto"
                                     muted
+                                    className={`${
+                                        list.id === 2 && "translate-x-44"
+                                      } pointer-events-none`
+                                    }
                                     ref={(element) =>
                                         (videoRef.current[index] = element)
                                     }

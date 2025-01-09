@@ -7,10 +7,10 @@ This repository contains the first stage of developing an Apple website clone us
 
 <br>
 
-## Stage 05: Implement Video Carousel Component  
+## Stage 09: Implement Footer Section  
 **Log Date:** January 9, 2025  
 
-This stage focuses on implementing the Video Carousel component to showcase video content interactively.
+This stage focuses on building and refining the Footer section for the Apple website clone.
 
 
 <hr>
@@ -19,16 +19,36 @@ This stage focuses on implementing the Video Carousel component to showcase vide
 ### Step-by-Step Process
 
 
-#### 1. Video Carousel Component Implementation  
+#### 1. Add 'Footer' Component  
 
-- Build a basic Video Carousel section to display video content effectively.  
+- Inside the `components` folder, create a file named `Footer.jsx`.  
+- Build the basic implementation for the Footer section.  
 
-👉 [View the updated `VideoCarousel.jsx` Component](./src/components/VideoCarousel.jsx)
+👉 [View the updated `Footer.jsx` Component](./src/components/Footer.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
 
+
 <br>
+
+<hr>
+
+
+#### 2. Update 'Footer' Component  
+
+- Refine and enhance the Footer section with additional features or styling.  
+
+👉 [View the updated `Footer.jsx` Component](./src/components/Footer.jsx)
+
+**Note:**  
+You can see the changes in real time during the development phase.
+
+
+<br>
+
+<hr>
+
 
 
 ### Run the Application  
@@ -41,14 +61,6 @@ After completing the above steps:
     ex: Local: ```http://localhost:{port#}/```
 
 <br>
-<hr>
-
-#### Stage 5 Screenshot : Basic Impl Video Carousel
-<img src="./_archive/screenshots/screenshot-2.png" height=300 > <img src="./_archive/screenshots/screenshot-3.png" height=300>
 
 <hr>
 See you in the next step for the development process! 🚀
-
-
-
-
