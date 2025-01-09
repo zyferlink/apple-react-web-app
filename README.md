@@ -55,6 +55,14 @@ npm install three @react-three/drei @react-three/fiber
 
 <hr>
 
+#### 4. Add Lights component
+ // group different lights and lightformers. We can use group to organize lights, cameras, meshes, and other objects in the scene.
+- 
+👉 [View the updated `Lights.jsx` Component](./src/components/model3d/Lights.jsx)
+<br>
+
+<hr>
+
 
 
 
