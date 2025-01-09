@@ -121,7 +121,7 @@ Then, open `http://localhost:5173` in your browser to see the project in action.
 <hr>
 
 
-> [!Note] <br>
+> [!Note]
 > Build for Production  
 > If you need a production-ready build, run:<br>
 > > npm run build
@@ -141,11 +141,12 @@ Then, open `http://localhost:5173` in your browser to see the project in action.
 > Active codebase for ongoing development efforts  (New features, bug fixes, and improvements..)  
 > ➲ [dev-current][branch-development]
 
+<br>
 
-### ➲ Code from the scratch
+#### ➲ Code from the scratch
 Explore the branches: Stage 1–9
 
-#### Branches  
+##### Branches  
 
 1. [**dev-stage-1-init_project**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-1-init_project)  
    Initial project setup.  
