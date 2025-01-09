@@ -7,10 +7,11 @@ This repository contains the first stage of developing an Apple website clone us
 
 <br>
 
-## Stage 08: Implement How It Works Section  
+## Stage 09: Implement Footer Section  
 **Log Date:** January 9, 2025  
 
-This stage focuses on building the "How It Works" section for the Apple website clone and refining its implementation.
+This stage focuses on building and refining the Footer section for the Apple website clone.
+
 
 <hr>
 <br>
@@ -18,12 +19,12 @@ This stage focuses on building the "How It Works" section for the Apple website 
 ### Step-by-Step Process
 
 
-#### 1. Add 'How It Works Section' Component  
+#### 1. Add 'Footer' Component  
 
-- Inside the `components` folder, create a file named `HowItWorks.jsx`.  
-- Build the basic implementation for the How It Works section.  
+- Inside the `components` folder, create a file named `Footer.jsx`.  
+- Build the basic implementation for the Footer section.  
 
-👉 [View the updated `HowItWorks.jsx` Component](./src/components/HowItWorks.jsx)
+👉 [View the updated `Footer.jsx` Component](./src/components/Footer.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
@@ -34,11 +35,11 @@ You can see the changes in real time during the development phase.
 <hr>
 
 
-#### 2. Update 'How It Works Section' Component  
+#### 2. Update 'Footer' Component  
 
-- Refine and enhance the How It Works section with additional styling or animations.
+- Refine and enhance the Footer section with additional features or styling.  
 
-👉 [View the updated `HowItWorks.jsx` Component](./src/components/HowItWorks.jsx)
+👉 [View the updated `Footer.jsx` Component](./src/components/Footer.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
@@ -63,7 +64,3 @@ After completing the above steps:
 
 <hr>
 See you in the next step for the development process! 🚀
-
-
-
-
