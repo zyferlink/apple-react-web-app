@@ -7,10 +7,10 @@ This repository contains the first stage of developing an Apple website clone us
 
 <br>
 
-## Stage 06: Implement 3D Model View Component  
+## Stage 07: Implement Feature Section Component  
 **Log Date:** January 9, 2025  
 
-This stage focuses on implementing a 3D model view component using Three.js and React Three Fiber to add an interactive 3D experience.
+This stage focuses on building the "Features" section for the Apple website clone and adding animations using GSAP.
 
 
 <hr>
@@ -19,97 +19,24 @@ This stage focuses on implementing a 3D model view component using Three.js and 
 ### Step-by-Step Process
 
 
-#### 1. Model Component Implementation  
+#### 1. Add Feature Component  
 
-- Build a basic model section.  
+- Inside the `components` folder, create a file named `Features.jsx`.  
+- Build the basic implementation for the Features section.  
 
-👉 [View the updated `Model.jsx` Component](./src/components/model3d/Model.jsx)
-
-**Note:**  
-You can see the changes in real time during the development phase.
-
-
-<br>
-
-<hr>
-
-#### 2. Model View Component Implementation  
-
-- Build a basic Model View section.  
-
-👉 [View the updated `ModelView.jsx` Component](./src/components/model3d/ModelView.jsx)
+👉 [View the updated `Features.jsx` Component](./src/components/Features.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
 
-
 <br>
 
 <hr>
 
 
-#### 3. Install Three.js and Dependencies  
+#### 2. Add Animation with GSAP Component  
 
-- Install the required packages for Three.js and React Three Fiber.  
-
-```bash
-npm install three @react-three/drei @react-three/fiber
-```
-
-
-<br>
-
-<hr>
-
-#### 4. Add Lights Component  
-
-- Group different lights and light formers. Use the group to organize lights, cameras, meshes, and other objects in the scene.  
-
-👉 [View the updated `Lights.jsx` Component](./src/components/model3d/Lights.jsx)
-<br>
-
-<hr>
-
-#### 5. Add iPhone JSX Component  
-
-- 🎮 Convert GLTF files into JSX components using the following repository:  
-  [gltfjsx Repository](https://github.com/pmndrs/gltfjsx)  
-
-1. Upload `assets/models/scene.glb` and convert.  
-2. Copy the converted JSX code and paste it into `IPhone.jsx`.  
-
-👉 [View the updated `IPhone.jsx` Component](./src/components/model3d/IPhone.jsx)
-
-<br>
-
-<hr>
-
-
-#### 6. Update iPhone JSX Component  
-
-- Add code to enable material texture changes for the model.  
-
-👉 [View the updated `IPhone.jsx` Component](./src/components/model3d/IPhone.jsx)
-
-<br>
-
-<hr>
-
-
-#### 7. Add Loading UI Component  
-
-- Create a loading text UI with styling.  
-
-👉 [View the updated `Loader.jsx` Component](./src/components/model3d/Loader.jsx)
-
-<br>
-
-<hr>
-
-
-#### 8. Add Animation with GSAP Timeline Component  
-
-- Create animations for the model using a GSAP timeline.  
+- Create an animation component using GSAP.  
 
 👉 [View the updated `animations.js` Component](./src/utils/animations.js)
 
@@ -117,12 +44,11 @@ npm install three @react-three/drei @react-three/fiber
 
 <hr>
 
+#### 3. Update Feature Component  
 
-#### 9. Update Model View Component Implementation  
+- Complete the implementation of the Features section with animations and styling.  
 
-- Update the Model View section with animation and interactivity.  
-
-👉 [View the updated `ModelView.jsx` Component](./src/components/model3d/ModelView.jsx)
+👉 [View the updated `Features.jsx` Component](./src/components/Features.jsx)
 
 **Note:**  
 You can see the changes in real time during the development phase.
@@ -131,20 +57,6 @@ You can see the changes in real time during the development phase.
 
 <hr>
 
-
-#### 10. Update Model Component Implementation  
-
-- Update the Model section to include additional features and styling.  
-
-👉 [View the updated `Model.jsx` Component](./src/components/model3d/Model.jsx)
-
-**Note:**  
-You can see the changes in real time during the development phase.
-
-
-<br>
-
-<hr>
 
 
 ### Run the Application  
