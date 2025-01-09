@@ -86,6 +86,16 @@ Add material texture change code
 <hr>
 
 
+#### 5. Add Loading UI component
+
+Loading text with style
+
+👉 [View the updated `Loader.jsx` Component](./src/components/model3d/Loader.jsx)
+<br>
+
+<hr>
+
+
 
 
 ### Run the Application  
