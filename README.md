@@ -70,6 +70,16 @@ npm install three @react-three/drei @react-three/fiber
 
 upload assets/models/scene.glb and convert. then
   copy that converted jsx code and paste to IPhone.jsx in the component section
+👉 [View the updated `IPhone.jsx` Component](./src/components/model3d/)
+<br>
+
+<hr>
+
+
+#### 5. Update Iphone jsx component
+
+Add material texture change code
+
 👉 [View the updated `IPhone.jsx` Component](./src/components/model3d/IPhone.jsx)
 <br>
 
