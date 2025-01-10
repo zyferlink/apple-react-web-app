@@ -82,7 +82,7 @@ const Model = () => {
           Take a closer look.
         </h1>
 
-        <div className="flex flex-col items-center mt-5">
+        <div className="flex flex-col items-center mt-3">
           <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
             <ModelView
               index={1}
@@ -121,7 +121,7 @@ const Model = () => {
           </div>
 
           <div className="mx-auto w-full">
-            <p className="text-sm font-light text-center mb-5">{model.title}</p>
+            <p className="text-sm font-normal text-center mb-5">{model.title}</p>
 
             <div className="flex-center">
               <ul className="color-container">
