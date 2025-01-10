@@ -23,7 +23,7 @@ const HowItWorks = () => {
     gsap.from('#chip', {
       scrollTrigger: {
         trigger: "#chip",
-        toggleActions: 'restart reverse restart reverse',
+        toggleActions: 'restart restart restart restart',
         start: SCROLL_TRIGGER_START,
       },
       opacity: CHIP_OPACITY,
