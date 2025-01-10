@@ -39,7 +39,8 @@ canvas {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
+    @apply px-5 py-2 rounded-full bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue text-lg;
+    text-shadow: 1px 1px 2px #3b3b3b;  
   }
 
   .color-container {
