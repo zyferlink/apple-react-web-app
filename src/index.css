@@ -87,7 +87,7 @@ canvas {
   }
 
   .hero-title {
-    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10
+    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10 scale-110 
   }
 
   .hiw-title {
