@@ -38,14 +38,17 @@ const Footer = () => {
         {/* Footer Links Section */}
         <div className="flex md:flex-row flex-col md:items-center justify-between">
           <p className="font-semibold text-gray text-xs">{COPYRIGHT_TEXT}</p>
-          <div className="flex">
+
+          <div className="flex flex-wrap">
             {footerLinks.map((link, index) => (
+            
               <p key={link} className="font-semibold text-gray text-xs">
                 {link}{' '}
                 {index !== footerLinks.length - 1 && (
                   <span className="mx-2">{SEPARATOR}</span>
                 )}
               </p>
+
             ))}
           </div>
         </div>
