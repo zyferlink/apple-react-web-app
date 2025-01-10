@@ -10,11 +10,23 @@ const SELECTORS = {
     title: "#title",
 };
 
+const VIDEO_WIDTH = {
+    SMALL_SCREEN: "10vw",
+    LARGE_SCREEN: "4vw",
+    DEFAULT: "12px",
+};
+
+const BG_COLOR = {
+    PLAYING: "white",
+    DEFAULT: "#afafaf",
+};
+
 const VideoCarousel = () => {
     const videoRef = useRef([]);
     const videoSpanRef = useRef([]);
     const videoDivRef = useRef([]);
 
+    // State management for video controls and playback
     const [video, setVideo] = useState({
         isEnd: false,
         startPlay: false,
@@ -50,6 +62,7 @@ const VideoCarousel = () => {
         }));
     };
 
+    // Toggle play/pause state
     const togglePlayPause = () => {
         setVideo((prevVideo) => ({
             ...prevVideo,
@@ -67,10 +80,12 @@ const VideoCarousel = () => {
         return isPlaying ? "pause" : "play";
     };
 
+    // Handle metadata loaded for each video
     const handleLoadedMetaData = (index, element) => {
         setLoadedData((prevData) => [...prevData, element]);
     };
 
+    // GSAP animations for slider transitions and video scroll triggers
     useGSAP(() => {
         gsap.to(SELECTORS.slider, {
             transform: `translateX(${-100 * videoId}%)`,
@@ -93,6 +108,7 @@ const VideoCarousel = () => {
         });
     }, [isEnd, videoId]);
 
+    // Sync playback state with the video element
     useEffect(() => {
         if (loadedData.length > 3) {
             if (!isPlaying) {
@@ -103,6 +119,7 @@ const VideoCarousel = () => {
         }
     }, [startPlay, videoId, isPlaying, loadedData]);
 
+    // Animate progress bar for each video
     useEffect(() => {
         let currentProgress = 0;
         const span = videoSpanRef.current;
@@ -118,26 +135,26 @@ const VideoCarousel = () => {
                         gsap.to(videoDivRef.current[videoId], {
                             width:
                                 window.innerWidth < 760
-                                    ? "10vw"
+                                    ? VIDEO_WIDTH.SMALL_SCREEN
                                     : window.innerWidth < 1200
-                                    ? "10vw"
-                                    : "4vw",
+                                        ? VIDEO_WIDTH.SMALL_SCREEN
+                                        : VIDEO_WIDTH.LARGE_SCREEN,
                         });
 
                         gsap.to(span[videoId], {
                             width: `${currentProgress}%`,
-                            backgroundColor: "white",
+                            backgroundColor: BG_COLOR.PLAYING,
                         });
                     }
                 },
                 onComplete: () => {
                     if (isPlaying) {
                         gsap.to(videoDivRef.current[videoId], {
-                            width: "12px",
+                            width: VIDEO_WIDTH.DEFAULT,
                         });
 
                         gsap.to(span[videoId], {
-                            backgroundColor: "#afafaf",
+                            backgroundColor: BG_COLOR.DEFAULT,
                         });
                     }
                 },
@@ -150,7 +167,7 @@ const VideoCarousel = () => {
             const animUpdate = () => {
                 anim.progress(
                     videoRef.current[videoId].currentTime /
-                        hightlightsSlides[videoId].videoDuration
+                    hightlightsSlides[videoId].videoDuration
                 );
             };
 
@@ -164,6 +181,7 @@ const VideoCarousel = () => {
 
     return (
         <>
+            {/* Video carousel slider */}
             <div className="flex items-center mt-10">
                 {hightlightsSlides.map((list, index) => (
                     <div
@@ -178,9 +196,8 @@ const VideoCarousel = () => {
                                     playsInline
                                     preload="auto"
                                     muted
-                                    className={`${
-                                        list.id === 2 && "translate-x-44"
-                                    } pointer-events-none`}
+                                    className={`${list.id === 2 && "translate-x-44"
+                                        } pointer-events-none`}
                                     ref={(element) =>
                                         (videoRef.current[index] = element)
                                     }
@@ -206,6 +223,7 @@ const VideoCarousel = () => {
                                 </video>
                             </div>
 
+                            {/* Video text overlay */}
                             <div className="absolute top-12 left-[5%] z-10">
                                 {list.textLists.map((text) => (
                                     <p
@@ -221,6 +239,7 @@ const VideoCarousel = () => {
                 ))}
             </div>
 
+            {/* Video controls */}
             <div className="relative flex-center mt-10">
                 <div className="flex-center py-5 px-7 bg-gray-300 backdrop-blur rounded-full">
                     {videoRef.current.map((_, index) => (
