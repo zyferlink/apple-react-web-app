@@ -7,6 +7,7 @@ const MOBILE_BREAKPOINT = 760;
 const DEBOUNCE_DELAY = 100;
 const HERO_FADE_IN_DELAY = 2;
 const CALL_TO_ACTION_FADE_IN_DELAY = 2;
+const EVENT_RESIZE = "resize";
 
 const Hero = () => {
     const [videoSrc, setVideoSrc] = useState(
@@ -26,11 +27,11 @@ const Hero = () => {
             window.resizeTimeout = setTimeout(updateVideoSrc, DEBOUNCE_DELAY);
         };
 
-        window.addEventListener("resize", handleResize);
+        window.addEventListener(EVENT_RESIZE, handleResize);
 
         return () => {
             clearTimeout(window.resizeTimeout);
-            window.removeEventListener("resize", handleResize);
+            window.removeEventListener(EVENT_RESIZE, handleResize);
         };
     }, []);
 
