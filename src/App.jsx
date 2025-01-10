@@ -16,49 +16,44 @@ const App = () => {
     // Simulate a loading time (e.g., fetching data)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // 2 seconds
+    }, 1000); // 2 seconds
 
     // Cleanup the timer
     return () => clearTimeout(timer);
   }, []);
 
-  if (isLoading) {
-    return (
-      <div className="flex items-center justify-center h-screen bg-black flex-col">
-
-        {/* Logo */}
-        <img
-          src={appleImg}
-          alt="Apple Logo"
-          width={32}
-          height={26}
-        />
-
-        {/* Loader container */}
-        <div className="loader-container mt-8"> 
-          <div className="line-loader">
-            <div className="line"></div>
-          </div>
-        </div>
-
-      </div>
-
-
-    );
-  }
-
   return (
     <main className="bg-black">
-      <Navbar />
-      <Hero />
-      <Highlights />
-      <Model />
-      <Features />
-      <HowItWorks />
-      <Footer />
+      {isLoading ? (
+        <div className="flex items-center justify-center h-screen bg-black flex-col">
+          {/* Logo */}
+          <img
+            src={appleImg}
+            alt="Apple Logo"
+            width={32}
+            height={26}
+          />
+
+          {/* Loader container */}
+          <div className="loader-container mt-8">
+            <div className="line-loader">
+              <div className="line"></div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <>
+          <Navbar />
+          <Hero />
+          <Highlights />
+          <Model />
+          <Features />
+          <HowItWorks />
+          <Footer />
+        </>
+      )}
     </main>
   );
 };
 
 export default App;
-
