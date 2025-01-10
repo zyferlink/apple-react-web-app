@@ -19,7 +19,7 @@ const App = () => {
       setFadeOut(true); 
       setTimeout(() => {
         setIsLoading(false);
-      }, 600); 
+      }, 1000); 
     }); 
     return () => clearTimeout(timer);
   }, []);
