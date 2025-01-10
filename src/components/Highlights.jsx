@@ -1,48 +1,59 @@
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
-import { rightImg, watchImg } from "../utils"
-import VideoCarousel from "./VideoCarousel"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { rightImg, watchImg } from "../utils";
+import VideoCarousel from "./VideoCarousel";
+
+// Animation constants
+const ANIMATION = {
+    TITLE: { opacity: 1, y: 0 },
+    LINK: { opacity: 1, y: 0, duration: 1, stagger: 0.25 },
+};
 
 const Highlights = () => {
     useGSAP(() => {
-        gsap.to('#title', { opacity: 1, y: 0 })
-        gsap.to('.link', { opacity: 1, y: 0, duration:1, stagger:0.25 })
-    }, [])
+        gsap.to("#title", ANIMATION.TITLE);
+        gsap.to(".highlight-link", ANIMATION.LINK);
+    }, []);
+
+    const HighlightLink = ({ text, imgSrc, altText }) => (
+        <a href="#" className="highlight-link flex items-center">
+            {text}
+            <img src={imgSrc} alt={altText} className="ml-2" />
+        </a>
+    );
 
     return (
         <section
             id="highlights"
-            className="w-screen overflow-hidden h-full common-padding bg-zinc">
-            <div
-                className="screen-max-width">
-                <div
-                    className="md-12 w-full md:flex items-end justify-between">
-                    <h1
-                        id="title"
-                        className="section-heading">
+            className="w-screen overflow-hidden h-full common-padding bg-zinc"
+        >
+            <div className="screen-max-width">
+                <div className="md-12 w-full md:flex items-end justify-between">
+                    {/* Title */}
+                    <h1 id="title" className="section-heading">
                         Get the highlights.
                     </h1>
-                    <div
-                        className="flex flex-wrap items-end gap-5">
-                        <p
-                            className="link">
-                            Watch the film
-                            <img src={watchImg} alt="watch" className="ml-2"/>
-                        </p>
-                        <p
-                            className="link">
-                            Watch the event
-                            <img src={rightImg} alt="right" className="ml-2"/>
-                        </p>
 
+                    {/* Links */}
+                    <div className="flex flex-wrap items-end gap-5">
+                        <HighlightLink
+                            text="Watch the film"
+                            imgSrc={watchImg}
+                            altText="watch"
+                        />
+                        <HighlightLink
+                            text="Watch the event"
+                            imgSrc={rightImg}
+                            altText="right arrow"
+                        />
                     </div>
                 </div>
 
-                <VideoCarousel/>
-
+                {/* Video Carousel */}
+                <VideoCarousel />
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Highlights
+export default Highlights;
