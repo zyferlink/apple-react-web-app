@@ -3,14 +3,19 @@ import { useGSAP } from "@gsap/react";
 import { heroVideo, smallHeroVideo } from "../utils";
 import { useEffect, useState } from "react";
 
+const MOBILE_BREAKPOINT = 760;
+const DEBOUNCE_DELAY = 100;
+const HERO_FADE_IN_DELAY = 2;
+const CALL_TO_ACTION_FADE_IN_DELAY = 2;
+
 const Hero = () => {
     const [videoSrc, setVideoSrc] = useState(
-        window.innerWidth < 760 ? smallHeroVideo : heroVideo
+        window.innerWidth < MOBILE_BREAKPOINT ? smallHeroVideo : heroVideo
     );
 
     // Helper function to update video source based on screen size
     const updateVideoSrc = () => {
-        const newSrc = window.innerWidth < 760 ? smallHeroVideo : heroVideo;
+        const newSrc = window.innerWidth < MOBILE_BREAKPOINT ? smallHeroVideo : heroVideo;
         setVideoSrc(newSrc);
     };
 
@@ -18,7 +23,7 @@ const Hero = () => {
     useEffect(() => {
         const handleResize = () => {
             clearTimeout(window.resizeTimeout);
-            window.resizeTimeout = setTimeout(updateVideoSrc, 100); // Debounce by 100ms
+            window.resizeTimeout = setTimeout(updateVideoSrc, DEBOUNCE_DELAY);
         };
 
         window.addEventListener("resize", handleResize);
@@ -32,10 +37,10 @@ const Hero = () => {
     // GSAP animations
     useGSAP(() => {
         gsap.to("#hero",
-            { opacity: 1, delay: 2 }
+            { opacity: 1, delay: HERO_FADE_IN_DELAY }
         );
         gsap.to("#callToAction",
-            { opacity: 1, y: -50, delay: 2 }
+            { opacity: 1, y: -50, delay: CALL_TO_ACTION_FADE_IN_DELAY }
         );
     });
 
@@ -67,7 +72,9 @@ const Hero = () => {
                 <a href="#highlights" className="btn">
                     Buy
                 </a>
-                <p className="font-large text-xl">From $199 / month or $999</p>
+                <p className="font-large text-xl">
+                    From $199 / month or $999
+                </p>
             </div>
         </section>
     );
