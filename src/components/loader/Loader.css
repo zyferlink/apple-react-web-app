@@ -6,9 +6,9 @@
 }
 
 .line-loader {
-    width: 100px; /* Width of the loader */
-    height: 10px; /* Height of the loader */
-    background-color: rgba(0, 0, 0, 0.2); /* Background for the loader container */
+    width: 100px; 
+    height: 6px; 
+    background-color: rgba(0, 0, 0, 0.2); 
     overflow: hidden;
     border-radius: 5px;
     position: relative;
@@ -16,11 +16,11 @@
 }
 
 .line {
-    width: 30%; /* Width of the animated line */
+    width: 30%; 
     height: 100%;
-    background-color: #fff; /* Color of the line */
+    background-color: #fff; 
     position: absolute;
-    animation: slide 1s infinite ease-in-out;
+    animation: slide 500ms infinite ease-in-out;
 }
 
 @keyframes slide {
@@ -36,6 +36,6 @@
 }
 
 .loading-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #fff;
 }
