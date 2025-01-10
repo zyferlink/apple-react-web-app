@@ -41,7 +41,7 @@ const Highlights = () => {
                             imgSrc={watchImg}
                             altText="watch"
                         />
-                        <p style={{ opacity: "0.2", marginBottom: "4px" }}>
+                        <p style={{ opacity: "0.1", marginBottom: "4px" }}>
                             |
                         </p>
                         <HighlightLink
