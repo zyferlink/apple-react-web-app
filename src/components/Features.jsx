@@ -7,7 +7,7 @@ import { explore1Img, explore2Img, exploreVideo } from '../utils';
 const ANIMATIONS = {
   VIDEO_SCROLL_TRIGGER: {
     trigger: "#exploreVideo",
-    toggleActions: 'play pause reverse restart',
+    toggleActions: 'restart reverse restart reverse',
     start: '-10% bottom',
   },
   TITLE_ANIMATION: { y: 0, opacity: 1 },
@@ -27,7 +27,7 @@ const Features = () => {
     gsap.to("#exploreVideo", {
       scrollTrigger: ANIMATIONS.VIDEO_SCROLL_TRIGGER,
       onComplete: () => {
-        videoRef.current?.play();
+        videoRef.current.play();
       },
     });
 
@@ -39,14 +39,14 @@ const Features = () => {
   return (
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
       <div className="screen-max-wdith">
-        <div className="mb-12 w-full">
+        <div className="mb-4 w-full">
           <h1 id="features_title" className="section-heading">
             Explore the full story.
           </h1>
         </div>
 
         <div className="flex flex-col justify-center items-center overflow-hidden">
-          <div className="mt-32 mb-24 pl-24">
+          <div className="mt-24 mb-24 pl-24">
             <h2 className="text-5xl lg:text-7xl font-semibold">iPhone.</h2>
             <h2 className="text-5xl lg:text-7xl font-semibold">Forged in Titanium.</h2>
           </div>
