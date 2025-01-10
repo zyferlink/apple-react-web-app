@@ -73,8 +73,8 @@ const Hero = () => {
                 <a href="#highlights" className="btn">
                     Buy
                 </a>
-                <p className="font-normal text-xl">
-                    From $199/month or $999
+                <p className="font-normal text-xl" style={{ letterSpacing: '0.5px' }}>
+                From $999 or $199/month
                 </p>
             </div>
         </section>
