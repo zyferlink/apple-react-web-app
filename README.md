@@ -33,23 +33,7 @@ This repository is a **frontend-only** clone of Apple’s iPhone 15 Pro website,
 
 <p align="center">
 <img 
-  src="./_archive/screenshots/screenshot-1.png" 
-  width="460" height="280" 
-  />
-<img
-    src="./_archive/screenshots/screenshot-2.png"
- width="460" height="240" 
-  />
-</p>
-
-<p align="center">
-<img
-    src="./_archive/screenshots/screenshot-3.png"
-    width="230" height="320"
-  />
-<img 
-  src="./_archive/screenshots/screenshot-4.png" 
-    width="230" height="320"
+  src="./_archive/screenshots/project-screens.png"
   />
 </p>
 

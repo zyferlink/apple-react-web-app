@@ -39,7 +39,8 @@ canvas {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
+    @apply px-5 py-2 rounded-full bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue text-lg;
+    text-shadow: 1px 1px 2px #3b3b3b;  
   }
 
   .color-container {
@@ -47,7 +48,7 @@ canvas {
   }
 
   .size-btn-container {
-    @apply flex items-center justify-center p-1 rounded-full bg-gray-300 backdrop-blur ml-3 gap-1
+    @apply flex items-center justify-center p-1 rounded-full bg-gray-300 backdrop-blur ml-3 gap-1 font-semibold
   }
 
   .size-btn {
@@ -87,7 +88,7 @@ canvas {
   }
 
   .hero-title {
-    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10
+    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10 scale-110 
   }
 
   .hiw-title {
@@ -120,5 +121,11 @@ canvas {
 
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
+  }
+
+  .carousel-text{
+    @apply text-2xl font-normal md:font-medium;
+    text-shadow: 1px 1px 2px #000;  
+    color: gainsboro;
   }
 }

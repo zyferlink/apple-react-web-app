@@ -15,10 +15,10 @@ const Highlights = () => {
         gsap.to(".highlight-link", ANIMATION.LINK);
     }, []);
 
-    const HighlightLink = ({ text, imgSrc, altText }) => (
-        <a href="#" className="highlight-link flex items-center">
+    const HighlightLink = ({ text, imgSrc, altText, style }) => (
+        <a href="#" className="highlight-link flex items-center text-blue text-lg">
             {text}
-            <img src={imgSrc} alt={altText} className="ml-2" />
+            <img src={imgSrc} alt={altText} className="ml-3" style={style} />
         </a>
     );
 
@@ -41,10 +41,14 @@ const Highlights = () => {
                             imgSrc={watchImg}
                             altText="watch"
                         />
+                        <p style={{ opacity: "0.1", marginBottom: "4px" }}>
+                            |
+                        </p>
                         <HighlightLink
                             text="Watch the event"
                             imgSrc={rightImg}
                             altText="right arrow"
+                            style={{ marginBottom: "-4px" }}
                         />
                     </div>
                 </div>

@@ -6,8 +6,8 @@
 }
 
 .line-loader {
-    width: 100px; 
-    height: 6px; 
+    width: 80px; 
+    height: 4px; 
     background-color: rgba(0, 0, 0, 0.2); 
     overflow: hidden;
     border-radius: 5px;
@@ -20,7 +20,7 @@
     height: 100%;
     background-color: #fff; 
     position: absolute;
-    animation: slide 500ms infinite ease-in-out;
+    animation: slide 800ms infinite ease-in-out;
 }
 
 @keyframes slide {
@@ -34,6 +34,31 @@
         left: 100%; /* Exit the container */
     }
 }
+
+/* Fade in animation for the entire loader container */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Fade out animation after loader is complete */
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Apply fade-out effect when loading is done */
+.fade-out {
+    animation: fadeOut 800ms ease-out forwards;
+  }
 
 .loading-text {
     font-size: 1.4rem;

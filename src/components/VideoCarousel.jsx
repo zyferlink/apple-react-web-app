@@ -182,7 +182,7 @@ const VideoCarousel = () => {
     return (
         <>
             {/* Video carousel slider */}
-            <div className="flex items-center mt-10">
+            <div className="flex items-center mt-16">
                 {hightlightsSlides.map((list, index) => (
                     <div
                         id="slider"
@@ -228,7 +228,7 @@ const VideoCarousel = () => {
                                 {list.textLists.map((text) => (
                                     <p
                                         key={text}
-                                        className="md:text-2xl text-xl font-medium"
+                                        className="carousel-text"
                                     >
                                         {text}
                                     </p>

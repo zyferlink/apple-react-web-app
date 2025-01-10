@@ -11,8 +11,8 @@ const LARGE_NAME = "large";
 const VIEW_BASE = "w-full h-full absolute";
 const RIGHT_CLASS = "right-[-100%]";
 
-const SMALL_SCALE = [15, 15, 15];
-const LARGE_SCALE = [17, 17, 17];
+const SMALL_SCALE = [14, 14, 14];
+const LARGE_SCALE = [16, 16, 16];
 const GROUP_POSITION = [0, 0, 0];
 const CAMERA_POSITION = [0, 0, 4];
 const AMBIENT_LIGHT_INTENSITY = 0.3;
