@@ -3,7 +3,7 @@ import Lights from "./Lights";
 import IPhone from "./IPhone";
 import { Suspense } from "react";
 import * as THREE from "three";
-import Loader from "./Loader";
+import Loader from "../loader/Loader";
 
 
 const SMALL_NAME = "small";
