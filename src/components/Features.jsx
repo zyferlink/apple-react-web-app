@@ -4,17 +4,9 @@ import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animations';
 import { explore1Img, explore2Img, exploreVideo } from '../utils';
 
-// Constants for magic strings/numbers
-const SELECTORS = {
-  VIDEO: '#exploreVideo',
-  FEATURES_TITLE: '#features_title',
-  GROW_ANIMATION: '.g_grow',
-  TEXT_ANIMATION: '.g_text',
-};
-
 const ANIMATIONS = {
   VIDEO_SCROLL_TRIGGER: {
-    trigger: SELECTORS.VIDEO,
+    trigger: "#exploreVideo",
     toggleActions: 'play pause reverse restart',
     start: '-10% bottom',
   },
@@ -32,16 +24,16 @@ const Features = () => {
 
   // Init animations using GSAP
   useGSAP(() => {
-    gsap.to(SELECTORS.VIDEO, {
+    gsap.to("#exploreVideo", {
       scrollTrigger: ANIMATIONS.VIDEO_SCROLL_TRIGGER,
       onComplete: () => {
         videoRef.current?.play();
       },
     });
 
-    animateWithGsap(SELECTORS.FEATURES_TITLE, ANIMATIONS.TITLE_ANIMATION);
-    animateWithGsap(SELECTORS.GROW_ANIMATION, ANIMATIONS.GROW_ANIMATION, { scrub: DURATION.SCRUB });
-    animateWithGsap(SELECTORS.TEXT_ANIMATION, ANIMATIONS.TEXT_ANIMATION);
+    animateWithGsap("#features_title", ANIMATIONS.TITLE_ANIMATION);
+    animateWithGsap(".g_grow", ANIMATIONS.GROW_ANIMATION, { scrub: DURATION.SCRUB });
+    animateWithGsap(".g_text", ANIMATIONS.TEXT_ANIMATION);
   }, []);
 
   return (
