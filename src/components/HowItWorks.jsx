@@ -4,17 +4,13 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animations';
 
-
-const SCROLL_TRIGGER_START = '20% bottom';
+const SCROLL_TRIGGER_START = "20% bottom";
 const CHIP_OPACITY = 0;
 const CHIP_SCALE = 2;
 const CHIP_ANIMATION_DURATION = 2;
 const FADE_IN_DURATION = 1;
-const EASE_TYPE = 'power2.inOut';
-const VIDEO_TYPE = 'video/mp4';
-const VIDEO_ALT_TEXT = 'frame';
-const VIDEO_TITLE = 'Honkai: Star Rail';
-const CHIP_ALT_TEXT = 'chip';
+const EASE_TYPE = "power2.inOut";
+const VIDEO_TYPE = "video/mp4";
 const CHIP_IMAGE_DIMENSIONS = 180;
 
 const HowItWorks = () => {
@@ -51,7 +47,7 @@ const HowItWorks = () => {
         <div id="chip" className="flex-center w-full my-20">
           <img
             src={chipImg}
-            alt={CHIP_ALT_TEXT}
+            alt="chip"
             width={CHIP_IMAGE_DIMENSIONS}
             height={CHIP_IMAGE_DIMENSIONS}
           />
@@ -75,7 +71,7 @@ const HowItWorks = () => {
             <div className="overflow-hidden">
               <img
                 src={frameImg}
-                alt={VIDEO_ALT_TEXT}
+                alt="frame"
                 className="bg-transparent relative z-10"
               />
             </div>
@@ -93,7 +89,7 @@ const HowItWorks = () => {
             </div>
           </div>
           <p className="text-gray font-semibold text-center mt-3">
-            {VIDEO_TITLE}
+            Honkai: Star Rail
           </p>
         </div>
 
