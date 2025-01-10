@@ -10,7 +10,7 @@ const Loader = () => {
                 <div className="line-loader">
                     <div className="line"></div>
                 </div>
-                <span className="loading-text">Loading...</span>
+                <span className="loading-text mt-2">Loading...</span>
             </div>
         </Html>
     );
