@@ -4,10 +4,10 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animations';
 
-const SCROLL_TRIGGER_START = "20% bottom";
+const SCROLL_TRIGGER_START = "-10% bottom";
 const CHIP_OPACITY = 0;
 const CHIP_SCALE = 2;
-const CHIP_ANIMATION_DURATION = 2;
+const CHIP_ANIMATION_DURATION = 1.5;
 const FADE_IN_DURATION = 1;
 const EASE_TYPE = "power2.inOut";
 const VIDEO_TYPE = "video/mp4";
@@ -22,7 +22,8 @@ const HowItWorks = () => {
     // Animation for chip
     gsap.from('#chip', {
       scrollTrigger: {
-        trigger: '#chip',
+        trigger: "#chip",
+        toggleActions: 'restart reverse restart reverse',
         start: SCROLL_TRIGGER_START,
       },
       opacity: CHIP_OPACITY,
