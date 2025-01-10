@@ -45,6 +45,21 @@
     }
   }
 
+  /* Fade out animation after loader is complete */
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Apply fade-out effect when loading is done */
+.fade-out {
+    animation: fadeOut 800ms ease-out forwards;
+  }
+
 .loading-text {
     font-size: 1.4rem;
     color: #fff;
