@@ -122,4 +122,10 @@ canvas {
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
   }
+
+  .carousel-text{
+    @apply text-2xl font-normal md:font-medium;
+    text-shadow: 1px 1px 2px #000;  
+    color: gainsboro;
+  }
 }
