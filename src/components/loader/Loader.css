@@ -1,0 +1,41 @@
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-loader {
+    width: 100px; /* Width of the loader */
+    height: 10px; /* Height of the loader */
+    background-color: rgba(0, 0, 0, 0.2); /* Background for the loader container */
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 30%; /* Width of the animated line */
+    height: 100%;
+    background-color: #fff; /* Color of the line */
+    position: absolute;
+    animation: slide 1s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        left: -30%; /* Start off-screen */
+    }
+    50% {
+        left: 50%; /* Move across the container */
+    }
+    100% {
+        left: 100%; /* Exit the container */
+    }
+}
+
+.loading-text {
+    font-size: 1.2rem;
+    color: #fff;
+}
