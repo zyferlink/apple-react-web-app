@@ -83,7 +83,7 @@ Ensure you have the following installed:
 ### Clone the Repository  
 
 ```bash
-git clone https://github.com/NovaLogics/apple-react-web-app.git
+git clone https://github.com/ZyferLink/apple-react-web-app.git
 cd apple-react-web-app
 ```
 
@@ -132,37 +132,37 @@ Explore the branches: Stage 1–9
 
 ##### Branches  
 
-1. [**dev-stage-1-init_project**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-1-init_project)  
+1. [**dev-stage-1-init_project**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-1-init_project)  
    Initial project setup.  
 
-2. [**dev-stage-2-add_resource**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-2-add_resource)  
+2. [**dev-stage-2-add_resource**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-2-add_resource)  
    Added required resources.  
 
-3. [**dev-stage-3-init_development**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-3-init_development)  
+3. [**dev-stage-3-init_development**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-3-init_development)  
    Initialized development environment.  
 
-4. [**dev-stage-4-impl_components**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-4-impl_components)  
+4. [**dev-stage-4-impl_components**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-4-impl_components)  
    Implemented core UI components.  
 
-5. [**dev-stage-5-impl_video_carousel**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-5-impl_video_carousel)  
+5. [**dev-stage-5-impl_video_carousel**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-5-impl_video_carousel)  
    Developed the video carousel feature.  
 
-6. [**dev-stage-6-impl_3d_model**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-6-impl_3d_model)  
+6. [**dev-stage-6-impl_3d_model**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-6-impl_3d_model)  
    Added 3D model rendering functionality.  
 
-7. [**dev-stage-7-impl_device_features**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-7-impl_device_features)  
+7. [**dev-stage-7-impl_device_features**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-7-impl_device_features)  
    Implemented the "Device Features" section.  
 
-8. [**dev-stage-8-impl_feat_how_it_works**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-8-impl_feat_how_it_works)  
+8. [**dev-stage-8-impl_feat_how_it_works**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-8-impl_feat_how_it_works)  
    Added the "How It Works" section.  
 
-9. [**dev-stage-9-impl_section_footer**](https://github.com/NovaLogics/apple-react-web-app/tree/dev-stage-9-impl_section_footer)  
+9. [**dev-stage-9-impl_section_footer**](https://github.com/ZyferLink/apple-react-web-app/tree/dev-stage-9-Impl_section_footer)  
    Implemented the footer section.  
 
 
-[branch-main]:  https://github.com/NovaLogics/apple-react-web-app/tree/main
+[branch-main]:  https://github.com/ZyferLink/apple-react-web-app/tree/main
 
-[branch-development]:  https://github.com/NovaLogics/apple-react-web-app/tree/dev-current
+[branch-development]:  https://github.com/ZyferLink/apple-react-web-app/tree/dev-current
 
 <br>
 
